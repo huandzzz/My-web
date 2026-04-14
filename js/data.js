@@ -1,5 +1,17 @@
 const products = [
-    { name: "Laptop", price: 15000 },
-    { name: "Chuột", price: 500 },
-    { name: "Bàn phím", price: 1000 }
+    {
+        name: "💻 Laptop Gaming",
+        price: 15000000,
+        img: "https://via.placeholder.com/200"
+    },
+    {
+        name: "🖱️ Chuột RGB",
+        price: 500000,
+        img: "https://via.placeholder.com/200"
+    },
+    {
+        name: "⌨️ Bàn phím cơ",
+        price: 1000000,
+        img: "https://via.placeholder.com/200"
+    }
 ];
