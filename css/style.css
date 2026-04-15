@@ -1,82 +1,65 @@
-/* Reset nhẹ */
 body {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: Arial;
     margin: 0;
     background: #0f172a;
     color: white;
 }
 
-/* Header */
+/* HEADER */
 header {
-    background: #1e293b;
-    padding: 20px;
+    background: #16a34a;
+    padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* Menu */
-nav {
-    margin-top: 10px;
 }
 
 nav a {
-    margin: 0 10px;
-    color: #38bdf8;
+    margin: 10px;
+    color: white;
     text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #22c55e;
+/* BANNER */
+.banner {
+    background: url('../images/banner.jpg');
+    background-size: cover;
+    padding: 60px;
+    text-align: center;
 }
 
-/* Section */
-section {
+/* SERVICES */
+.services {
     padding: 30px;
     text-align: center;
 }
 
-/* Grid sản phẩm */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.service {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* PRODUCTS */
 #productList {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Card sản phẩm */
 .product {
     background: #1e293b;
     padding: 15px;
-    border-radius: 15px;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-}
-
-.product:hover {
-    transform: translateY(-5px) scale(1.03);
-    background: #334155;
-}
-
-/* Text trong sản phẩm */
-.product h3 {
-    margin: 10px 0;
-}
-
-.product p {
-    color: #22c55e;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    background: #1e293b;
+    border-radius: 10px;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
 }
