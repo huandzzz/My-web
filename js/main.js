@@ -4,7 +4,7 @@ function loadProducts() {
     products.forEach(p => {
         html += `
             <div class="product">
-                <img src="${p.img}" style="width:100%; border-radius:10px;">
+                <img src="${p.img}">
                 <h3>${p.name}</h3>
                 <p>${p.price.toLocaleString()} VNĐ</p>
             </div>
