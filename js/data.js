@@ -1,23 +1,22 @@
 const products = [
     {
-        id: 1,
-        name: "💻 Laptop Gaming",
-        price: 15000000,
-        img: "https://via.placeholder.com/200",
-        desc: "Laptop mạnh, chơi game mượt"
+        name: "📷 Camera Hikvision",
+        price: 1200000,
+        img: "images/camera1.jpg"
     },
     {
-        id: 2,
-        name: "🖱️ Chuột RGB",
-        price: 500000,
-        img: "https://via.placeholder.com/200",
-        desc: "Chuột đẹp, LED nhiều màu"
+        name: "📷 Camera Wifi",
+        price: 900000,
+        img: "images/camera2.jpg"
     },
     {
-        id: 3,
+        name: "🖱️ Chuột Gaming",
+        price: 300000,
+        img: "images/mouse.jpg"
+    },
+    {
         name: "⌨️ Bàn phím cơ",
-        price: 1000000,
-        img: "https://via.placeholder.com/200",
-        desc: "Gõ sướng, bền"
+        price: 800000,
+        img: "images/keyboard.jpg"
     }
 ];
