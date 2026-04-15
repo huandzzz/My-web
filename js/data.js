@@ -2,7 +2,7 @@ const products = [
     {
         name: "📷 Camera Hikvision",
         price: 1200000,
-        img: "images/camera1.jpg"
+        img: "hình ảnh/camera1.jpg"
     },
     {
         name: "📷 Camera Wifi",
