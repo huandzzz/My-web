@@ -2,43 +2,55 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTY TNHH ĐẦU TƯ & THƯƠNG MẠI QUỐC VIỆT</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body onload="loadProducts()">
 
-<header>
+<header class="header">
     <h1>Camera & Máy Tính Quốc Việt</h1>
     <nav>
         <a href="#">Trang chủ</a>
-        <a href="#">Dịch vụ</a>
-        <a href="#">Sản phẩm</a>
-        <a href="#">Liên hệ</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#contact">Liên hệ</a>
     </nav>
 </header>
 
+<!-- BANNER -->
 <section class="banner">
     <h2>Lắp đặt Camera - WiFi - Sửa máy tính</h2>
     <p>Uy tín - Nhanh chóng - Giá rẻ</p>
 </section>
 
-<section class="services">
-    <h2>Dịch vụ</h2>
+<!-- DỊCH VỤ -->
+<section id="services" class="services">
+    <h2>Dịch vụ của chúng tôi</h2>
     <div class="service-list">
         <div class="service">📷 Lắp camera</div>
         <div class="service">🌐 Lắp WiFi</div>
         <div class="service">💻 Sửa máy tính</div>
-        <div class="service">🔧 Bảo trì</div>
+        <div class="service">🔧 Bảo trì hệ thống</div>
     </div>
 </section>
 
-<section>
-    <h2>Sản phẩm</h2>
-    <div id="productList"></div>
+<!-- SẢN PHẨM -->
+<section id="products" class="products">
+    <h2>Sản phẩm nổi bật</h2>
+    <div id="productList" class="product-grid"></div>
+</section>
+
+<!-- LIÊN HỆ -->
+<section id="contact" class="services">
+    <h2>Liên hệ</h2>
+    <p>📍 Địa chỉ: Phan Thiết</p>
+    <p>📞 SĐT: 0123 456 789</p>
+    <p>📧 Email: quoctviet@gmail.com</p>
 </section>
 
 <footer>
-    <p>© 2026 Quốc Việt</p>
+    <p>© 2026 Công Ty Quốc Việt</p>
 </footer>
 
 <script src="js/data.js"></script>
