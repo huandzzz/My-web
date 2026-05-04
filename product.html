@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản phẩm - Quốc Việt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadProducts()">
+
+<header>
+    <div class="container header-box">
+        <h1>CTY TNHH ĐẦU TƯ & THƯƠNG MẠI QUỐC VIỆT</h1>
+
+        <nav class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="service.html">Dịch vụ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container product-page-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h3>Danh mục sản phẩm</h3>
+        <ul>
+           <li class="active" onclick="filterCategory('All', this)">Tất cả</li>
+                <li onclick="filterCategory('Camera', this)">Camera</li>
+                <li onclick="filterCategory('WiFi', this)">Thiết bị WiFi</li>
+                <li onclick="filterCategory('Linh kiện', this)">Linh kiện</li>
+        </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="main-content">
+        <h2>Tất cả sản phẩm</h2>
+        <div id="productList" class="product-grid"></div>
+    </main>
+
+</div>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Quốc Việt | Hotline: 0865521207</p>
+    </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+<div class="auth-container">
+    <h2>Đăng nhập</h2>
+
+    <input id="loginUser" placeholder="Tài khoản">
+    <div class="password-box">
+    <input id="loginPass" type="password" placeholder="Mật khẩu">
+    <span onclick="togglePass('loginPass')">👁️</span>
+</div>
+    <button onclick="login()" class="auth-btn">Đăng nhập</button><br>
+<p>Chưa có tài khoản? 
+    <a href="register.html">Đăng ký</a>
+</p>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

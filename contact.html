@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ - Quốc Việt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container header-box">
+        <h1>CTY TNHH ĐẦU TƯ & THƯƠNG MẠI QUỐC VIỆT</h1>
+
+        <nav class="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="service.html">Dịch vụ</a>
+            <a href="product.html">Sản phẩm</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container contact-page">
+    <h2>Liên hệ với chúng tôi</h2>
+    
+    <div class="contact-wrapper">
+
+        <!-- INFO -->
+        <div class="contact-info">
+            <h3>Thông tin công ty</h3>
+            <p><strong>Hotline:</strong> 0865521207</p>
+            <p><strong>Địa chỉ:</strong> Phan Thiết, Bình Thuận</p>
+            <p><strong>Email:</strong> huanminh960@gmail.com</p>
+            <p><strong>Thời gian:</strong> 08:00 - 18:00 (Thứ 2 - Thứ 7)</p>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form">
+            <form onsubmit="return submitForm(event)">
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email của bạn" required>
+                <textarea placeholder="Nội dung cần hỗ trợ..." rows="5" required></textarea>
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Quốc Việt | Hotline: 0865521207</p>
+    </div>
+</footer>
+
+<!-- JS nhỏ cho form -->
+<script id="z9g7xp">
+function submitForm(e) {
+    e.preventDefault();
+    alert("Đã gửi thành công!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quốc Việt | Camera - WiFi - Máy tính</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadProducts()">
+
+<header>
+    <div class="container header-box">
+
+        <!-- LOGO / TIÊU ĐỀ -->
+        <h1 class="logo-title">
+            CTY TNHH ĐẦU TƯ & THƯƠNG MẠI QUỐC VIỆT
+        </h1>
+
+        <div class="header-nav-search">
+
+            <!-- MENU -->
+            <nav class="menu">
+                <a href="index.html">Trang chủ</a>
+                <a href="service.html">Dịch vụ</a>
+                <a href="product.html">Sản phẩm</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+
+            <!-- SEARCH -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm...">
+                <button onclick="doSearch()">🔍</button>
+            </div>
+			<div class="auth-box">
+    <button onclick="goLogin()">Đăng nhập</button>
+    <button onclick="goRegister()">Đăng ký</button>
+</div>
+
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-wrapper">
+
+        <!-- DANH MỤC -->
+        <div class="category">
+            <h3>Danh mục</h3>
+            <ul>
+                <li class="active" onclick="filterCategory('All', this)">Tất cả</li>
+                <li onclick="filterCategory('Camera', this)">Camera</li>
+                <li onclick="filterCategory('WiFi', this)">Thiết bị WiFi</li>
+                <li onclick="filterCategory('Linh kiện', this)">Linh kiện</li>
+            </ul>
+        </div>
+
+        <!-- HERO MAIN -->
+        <div class="hero-main">
+            <div class="hero-text">
+                <h2>Lắp đặt Camera - WiFi - Sửa máy tính</h2>
+                <p>Uy tín - Nhanh chóng - Giá tốt</p>
+				<button onclick="goContact()">Liên hệ ngay</button>
+            </div>
+
+            <div class="hero-img">
+                <img src="images/banner.jpg" alt="banner">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="container">
+        <h2>Dịch vụ của chúng tôi</h2>
+
+        <div class="service-detail-list"> 
+            
+            <div class="service-item">
+                <div class="service-img">💻</div>
+                <div>
+                    <h3>Sửa chữa máy vi tính và thiết bị ngoại vi</h3>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-img">📡</div>
+                <div>
+                    <h3>Bán buôn thiết bị và linh kiện điện tử, viễn thông</h3>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-img">🖥️</div>
+                <div>
+                    <h3>Bán buôn máy vi tính, thiết bị ngoại vi và phần mềm</h3>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-img">📺</div>
+                <div>
+                    <h3>Bán lẻ thiết bị nghe nhìn trong các cửa hàng chuyên doanh</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+    <div class="container">
+        <h2>Thiết bị tiêu biểu</h2>
+        <div id="productList"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Quốc Việt | Hotline: 0865521207</p>
+    </div>
+</footer>
+
+<!-- JS (QUAN TRỌNG: data trước main) -->
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script src="auth.js"></script>
+<script src="cart.js"></script>
+
+<a href="https://zalo.me/0865521207" class="zalo-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg">
+</a>
+
+<div class="cart-btn">
+    <a href="cart.html" style="color:white; text-decoration:none;">
+        🛒 <span id="cartCount">0</span>
+    </a>
+</div>
+</body>
+</html>
